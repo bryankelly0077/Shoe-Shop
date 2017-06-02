@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Useful Links</title>
+</head>
+<body>
+<table width="100%" >
+<tr><h1 size="100" align="center"><a href="index.html" >Funky Footware</a></h1>
+	<td colspan="3" width="950" height="200" background ="allTypesFootware.jpg" alt="Funky Footware">
+	
+	</td>
+</tr>
+<!--Navigation Area-->
+<tr>
+	<td width="200" height="400" valign="top"> Navigation Area
+	<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About Us</a></li>
+	<li><a href="contact.html">Contact Information</a></li>
+	<li><a href="offers.html">Special Offers</a></li>
+	<li><a href="links.html">Useful Links</a></li>
+	</ul>
+	</td>
+	<!--Main Content Area-->
+	<td width="550" height="400"><h1><center>Useful Links</center></h1>
+		<ul>
+		<li>Understand how to keep your feet healthy with these helful tips from the HSE.<br>
+		<a href="http://www.hse.ie/eng/services/list/4/olderpeople/tipsforhealthyliving/footcare.html" 
+		target="_blank">How to take care of your feet</a></li>
+		<br>
+		<br>
+		<li>Information for upcoming marathon events thoughout Ireland in the coming year.<br>
+		<a href="http://marathons.ahotu.com/calendar/marathon/ireland"
+		target="_blank">Marathon events Ireland</a></li>
+		<br>
+		<br>
+		<li>Get the perfect shoes for ladies day at The Galway Races. Check out the fashion from this year.<br>
+		<a href="http://www.galwayraces.com/fixtures-ticket/ladies-day/"
+		target="_blank">Ladies Day Fashion</a></li>
+		<br>
+		<br>
+		<li>Stay safe while running or walking on Irish roads.<br>
+		<a href="http://www.rsa.ie/en/RSA/Pedestrians-and-Cyclists/Pedestrian-safety/"
+		target="_blank">Pedestrian Road Safety</a></li>
+		<br>
+		<br>
+		<li>Check out the advice from the HSA on the importance of good footware to remove the risk of slips and falls.<br>
+		<a href="http://www.hsa.ie/eng/Topics/Slips_Trips_Falls/Shoes,_Footwear/"
+		target="_blank">Importance of good footware</a></li>
+		
+	</td>
+	
+	<!--Other Content Area-->
+	<td width="200" height="400" background ="footprintAnimal.jpg" alt="Footprints">
+</tr>
+<tr>
+	<!--Footer Area-->
+	<td colspan="3" width ="950" height="100" align="center">
+	This page 'Funky Footware' was created as part of an 'Internet Programming' module CT870 </td>
+</tr>
+</table>
+</body>
+</html>

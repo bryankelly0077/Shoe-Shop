@@ -1,0 +1,258 @@
+
+<h3>Offers</h3>
+
+<div id="info"></div>
+
+<table class="table">
+	<tr>
+		<!-- ============ Product Title SECTION ============== -->
+		<td colspan="2" class="tableheader" >
+			<h1>Retro Mobile Phone</h1>
+		</td>
+	</tr>
+	<tr>
+		<!-- ============ Photo COLUMN (MENU) ============== -->
+		<td class="tablerow">
+			<a href="offers.html">
+				<img id="img1" src="../img/oldphone.jpg" alt="Retro Mobile Phone" height="20%" width="width" onmouseover="getinfo(id)">
+				</a>
+			</td>
+			<!-- ============ Description COLUMN (CONTENT) ============== -->
+			<td class="tabledata">
+				<p id="content">Vintage Cortelco ITk Push Phone Tested, Retro. Pre-owned condition, tested and works. They came from a school in Wisconsin. They do have some scuffs, scratches, dents, dings, and marks from use.</p>
+				<br>
+					<p>Was €210, Now  €100</p>
+					<br>
+					</td>
+				</tr>
+			</table>
+			<!-- ============ OFFERS (Offer2) ============== -->
+			<table class="table">
+				<tr>
+					<!-- ============ Product Title SECTION ============== -->
+					<td colspan="2" class="tableheader" >
+						<h1>Retro Camera</h1>
+					</td>
+				</tr>
+				<tr>
+					<!-- ============ Photo COLUMN (MENU) ============== -->
+					<td class="tablerow">
+						<a href="offers.html">
+							<img id="img2" src="../img/polaroid.jpeg" alt="Retro Camera" height="20%" width="width" onmouseover="getinfo(this.id)">
+							</a>
+						</td>
+						<!-- ============ Description COLUMN (CONTENT) ============== -->
+						<td class="tabledata" >
+							<p id="content1">10 megapixels normal, black & white and vintage sepia tone MicroSD card indicator self timer feature Image prints automatically 2x3” full color prints</p>
+							<br>
+								<p>Was €90, Now  €50</p>
+								<br>
+								</td>
+							</tr>
+						</table>
+						<!-- ============ OFFERS (Offer3) ============== -->
+						<table class="table">
+							<tr>
+								<!-- ============ Product Title SECTION ============== -->
+								<td colspan="2" class="tableheader">
+									<h1>Retro Skateboard</h1>
+								</td>
+							</tr>
+							<tr>
+								<!-- ============ Photo COLUMN (MENU) ============== -->
+								<td class="tablerow">
+									<a href="offers.html">
+										<img id="img3" src="../img/skateboard.jpg" alt="Retro Skateboard" height="20%" width="width" onmouseover="getinfo(this.id)">
+										</a>
+									</td>
+									<!-- ============ Description COLUMN (CONTENT) ============== -->
+									<td class="tabledata">
+										<p id="content2">Complete skateboard and brings a colourful twist. Available in 2 great colours. Regular – 7.75″ x 31.5″ 7 ply maple hot pressed, deep concave NEW 129mm Enuff Decade trucks with 95A cushions 53mm 99A wheels ABEC 7 chrome bearings</p>
+										<br>
+											<p>Was €110, Now  €90</p>
+											<br>
+											</td>
+										</tr>
+									</table>
+									<!-- ============ OFFERS (Offer4) ============== -->
+									<table class="table">
+										<tr>
+											<!-- ============ Product Title SECTION ============== -->
+											<td colspan="2" class="tableheader">
+												<h1>Retro Office Supplies</h1>
+											</td>
+										</tr>
+										<tr>
+											<!-- ============ Photo COLUMN (MENU) ============== -->
+											<td class="tablerow">
+												<a href="offers.html">
+													<img id="img4" src="../img/stuff.jpeg" alt="Retro Office Supplies" height="20%" width="width" onmouseover="getinfo(this.id)">
+													</a>
+												</td>
+												<!-- ============ Description COLUMN (CONTENT) ============== -->
+												<td class="tabledata" >
+													<p id="content3">A large selection of materials stands at the ready: mark up documents with a variety of colored felt pens, or jot down notes or essays with pencils or gel pens. Jumbo pushpins effortlessly hold documents, photos, or ticket stubs against the board's cork sides. </p>
+													<br>
+														<p>Was €50, Now  €20</p>
+														<br>
+															<br>
+																<br>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</div>
+
+<script>
+function getinfo(id){
+		if(id==document.getElementById("img1").id){
+			document.getElementById('info').innerHTML=document.getElementById("content").innerHTML;
+		} else if(id==document.getElementById("img2").id){
+			document.getElementById('info').innerHTML=document.getElementById("content1").innerHTML;
+		} else if(id==document.getElementById("img3").id){
+			document.getElementById('info').innerHTML=document.getElementById("content2").innerHTML;
+		} else if(id==document.getElementById("img4").id){
+			document.getElementById('info').innerHTML=document.getElementById("content3").innerHTML;
+		}
+	}
+</script>
+
+<tr>
+		<td>Junior was a loyal pet to owner Hammerstein until a faithful day when an escape attempt went arry.</td> 
+		<td><strong>&euro;99.99</strong> (incl. postage and packaging)</td>
+		<td><div id ="junior"></div><img src="image9.jpg" id ="juni" style="max-height:70%; max-width:80%";
+			onmouseover="document.getElementById('junior').innerHTML= 'Most Prized Position could be yours for 2017';"
+			onmouseout="document.getElementById('junior').innerHTML= '';"
+		</td>
+		</tr>
+		<tr>
+		<td>Sparky is so cute in this pose you could just eat him up.
+		<br>(Disclaimer - it is not advised to injest any of our products).</td>
+		<td><strong>&euro;99.99</strong> (incl. postage and packaging).</td>
+		<td><div id = "sparky"></div><img id = "spar" src="image10.jpg"style="max-height:60%; max-width:80%" 
+			onmouseover="document.getElementById('sparky').innerHTML= 'Look at those eyes, they could be yours';"
+			onmouseout="document.getElementById('sparky').innerHTML= '';"
+
+var image_tracker = 's';
+		function change(){
+			var image = document.getElementById('ShoeBasket');
+			alert(image.src);
+			if(image_tracker=='s'){
+				image.src = 'ShoeBasket.jpeg';
+				image_tracker = 'o';
+				}
+				else{
+				image.src = 'OutDoorShoes.jpeg';
+				image_tracker = 'o';
+				}
+		}
+		
+		//var timer = setInterval()
+		setTimeout('change()',4000);
+
+<html>
+<head>
+<script type="text/javascript">
+function validate()
+{
+if((myform.fname.value=="")||(myform.sname.value=="")||(myform.address.value=="")) {
+window.alert("Please fill in all fields");
+}
+else {
+myform.message.value="Details added:\n\n"+myform.fname.value+" "+myform.sname.value+"\n"
++ myform.address.value;
+}
+}
+</script>
+</head>
+<body>
+<form name=myform>
+Please enter your first name:
+<input type=text name=fname value="" size=10><br><br>
+Please enter your Surname:
+<input type=text name=sname value="" size=10><br><br>
+Please enter your address:
+<input type=text name=address value="" size=10><br><br>
+<input type=button name=button1 value="Submit" onclick="validate()";><br><br>
+<textarea name=message rows=3 cols=40></textarea>
+</form>
+</body>
+</html>
+
+------------------------
+
+
+
+<html>
+<head>
+<style>
+#bYear { background:#FFFFFF; }
+#eMail { background:#FFFFFF; }
+</style>
+<script type="text/javascript">
+function validateYear() {
+var y = parseInt(myform.bYear.value);
+if (y<1900 || y>2013) {
+bYear.style.background = "#FF0000";
+}
+else {
+bYear.style.background = "#FFFFFF";
+}
+}
+function validateEmail() {
+var e = myform.eMail.value;
+if (e.indexOf("@")<0) {
+eMail.style.background = "#FF0000";
+}
+else {
+eMail.style.background = "#FFFFFF";
+}
+}
+</script>
+</head>
+<body>
+<form name="myform">
+Please enter your year of birth:
+<input type="text" id="bYear" name="bYear" value="1980" size="10" onchange="validateYear();"
+onkeyup="validateYear();"><br><br>
+Please enter your email address:
+<input type="text" id="eMail" name="eMail" value="" size="10" onchange="validateEmail();"
+onkeyup="validateEmail();"><br><br>
+</form>
+</body>
+</html>
+
+-------------------------------------
+
+
+else {
+				window.alert("Your question will be dealt with as soon as possible")
+				}
+				
+				
+function validate(){
+			if(document.myform.name.length<10) {
+			alert("Please enter at least 10 characters");
+			}
+		}
+		
+<form name="myform">
+				Please choose a category for your question
+				<br>
+				<select name="categories">
+					<option value="sales">sales</option>
+					<option value="returns">returns</option>
+					<option value="shipping">shipping</option>
+					<option value="payment">payment</option>
+					<option value="vouchers">vouchers</option>
+				</select>
+				<br>
+				<textarea name="question" rows=3 cols=40></textarea>
+				<br>
+				Please enter your name:
+				<input type="text" name="name" value="" size=10><br><br>
+				Please enter your Email address:
+				<input type="email" name="email" value="" size=10><br><br>
+				<input type="button" name="button" value="Submit!" onclick="validate()";><br><br>
+				
+			</form>

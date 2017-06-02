@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" >
+	<title>Offers</title>
+	<script type="text/javascript">
+				function startTime() {
+				var today = new Date();
+				var h = today.getHours();
+				var m = today.getMinutes();
+				var s = today.getSeconds();
+				m = checkTime(m);
+				s = checkTime(s);
+				document.getElementById('clock').innerHTML =
+				h + ":" + m + ":" + s;
+				var t = setTimeout(startTime, 500);
+				}
+				function checkTime(i) {
+				if (i < 10) 
+					{i = "0" + i};  // add zero in front of numbers < 10
+					return i;
+				}
+			</script>
+			
+	<style>
+		table {
+		border-collapse: collapse;
+		width: 100%;
+		cellpadding: 0px;
+		cellspacing: 0px;
+		}
+
+		th, td {
+		text-align: left;
+		padding: 5px;
+		}
+
+		tr:nth-child(even){background-color: #FFFFCC}
+
+		th {
+			background-color: maroon;
+			color: white;
+			text-align:center;
+		}
+	</style>
+</head>
+<body  onload="startTime()" "carousel();">
+		<div class = "photoheader"></div>
+	<div class = "header">
+			<h1 style="background-color:#999999; color:#EEEEEE; font-size:60px; padding: 30px; margin: 0px; text-align:center ">Funky Footware
+				<div id="clock">
+				</div>
+			</h1>		
+	</div>	
+			<div class="banner">
+				<div id="bannerleft">
+					&nbsp
+				</div>
+				<div class="slider">
+					<img class="mySlides" src="ShoeBasket.jpeg" style="width:100%">
+					<img class="mySlides" src="OutDoorShoes.jpeg" style="width:100%">
+					<img class="mySlides" src="LeatherShoes.jpeg" style="width:100%">
+					<img class="mySlides" src="SummerShoes.jpeg" style="width:100%">
+				</div>
+				<div id= "bannerright">
+					&nbsp
+				</div>
+				<script type="text/javascript">
+					var myIndex = 0;
+					carousel();
+
+					function carousel() {
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";  
+							}
+							myIndex++;
+							if (myIndex > x.length) {myIndex = 1}    
+						x[myIndex-1].style.display = "block";  
+						setTimeout(carousel, 2000); // Change image every 2 seconds
+						}
+						
+					function getdesc(id){
+						if(id=="ladiesShoes"){
+							document.getElementById('description').innerHTML='These ladies shoes are curently availabe in colours blue,black,green and red';
+						} else if(id=="SportsTrainers"){
+							document.getElementById('description').innerHTML='Air Max Trainers are curently availabe in Mens sizes 6,7,10 & 12';
+						} else if(id=="SpaceBoots"){
+							document.getElementById('description').innerHTML='SpaceBoots are currently available with personalised plates at rear';
+						} 
+					}
+				</script>
+			</div>
+
+	<div class= "content">
+	<!--Navigation Area-->
+		<div class="nav"> 
+			<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.php">Contact Information</a></li>
+			<li><a href="offers.html">Special Offers</a></li>
+			<li><a href="links.html">Useful Links</a></li>
+			</ul>
+		</div>
+	<!--Main Content Area-->
+		<div class="main" >
+			<div id="description"></div>
+				<h1>Special Offers</h1>
+				<table>
+				<tr>
+					<th> Title</th>
+					<th> Description</th>
+					<th> Price&euro;</th>
+					<th> Image</th>
+				</tr>
+				<tr>
+					<td>Ladies Shoes </td>
+					<td>We have a 'Half Price' sale on all ladies shoes from the Prada range</td>
+					<td>Were &euro;70.00 <br> Now &euro;35.00</td>
+					<td><img id="ladiesShoes" onmouseover="getdesc(id)" width="100" height="100" src="ladiesShoes.jpg" alt="Ladies Shoes"></td>							
+				</tr>
+				<tr>
+					<td>Sports Trainers</td>
+					<td>20% off on all Nike Airmax sports shoes. Offer ends October 30th 2016</td>
+					<td> Were &euro;100.00 <br> now &euro;80.00</td>
+					<td><img id="SportsTrainers" onmouseover="getdesc(id)" width="100" height="100" src="airMax.jpg" alt="Nike airMax"></td>					
+				</tr>
+				<tr>
+					<td>Space Boots</td>
+					<td>Due to excessive stock you can now avail of our exclusive range of Spaceboots
+					at a huge dicount price</td>
+					<td> Were &euro;1000.00 <br> now &euro;50.00</td>
+					<td><img id ="SpaceBoots" onmouseover="getdesc(id)" width="100" height="100" src="spaceBoot.jpg" alt="Space Boot">
+					</td>					
+				</tr>				
+				</table>
+		</div>
+		
+	<!--Other Content Area-->
+		<div class="othercontent">
+		</div>
+	</div>
+	<!--Footer Area-->
+	<div class="footer" >
+		This page 'Funky Footware' was created as part of an 'Internet Programming' module CT870
+	</div>
+</body>
+</html>

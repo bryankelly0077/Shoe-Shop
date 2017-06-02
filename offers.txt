@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Special Offers</title>
+</head>
+<body>
+<table width="100%" >
+<tr><h1 size="100" align="center"><a href="index.html" >Funky Footware</a></h1>
+	<td colspan="3" width="950" height="200" background ="allTypesFootware.jpg" alt="Funky Footware">
+	
+	</td>
+</tr>
+<!--Navigation Area-->
+<tr>
+	<td width="200" height="400" valign="top"> Navigation Area
+	<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About Us</a></li>
+	<li><a href="contact.html">Contact Information</a></li>
+	<li><a href="offers.html">Special Offers</a></li>
+	<li><a href="links.html">Useful Links</a></li>
+	</ul>
+	</td>
+	<!--Main Content Area-->
+	<td width="550" height="400"><h1><center>Special Offers</center></h1>
+	<table border="1" width 100% cellspacing="2" cellpadding="2">
+		<tr>
+			<td><h2> Title</h2></td>
+			<td><h2> Description</h2></td>
+			<td><h2> Price &euro; </h2></td>
+			<td><h2> Image</h2></td>
+		</tr>
+		<tr>
+			<td>Ladies Shoes </td>
+			<td>We have a 'Half Price' sale on all ladies shoes from the Prada range
+			<td>Were &euro;70.00 <br> Now &euro;35.00</td>
+			<td><img width="100" height="100" src="ladiesShoes.jpg" alt="Ladies Shoes"></td>
+		</tr>
+		<tr>
+			<td>Sports Trainers</td>
+			<td>20% off on all Nike Airmax sports shoes. Offer ends October 30th 2016</td>
+			<td> Were &euro;100.00 <br> now &euro;80.00</td>
+			<td><img width="100" height="100" src="airMax.jpg" alt="Nike airMax"></td>
+		</tr>
+		<tr>
+			<td>Spaceboots</td>
+			<td>Due to excessive stock you can now avail of our exclusive range of Spaceboots
+			at a huge dicount price</td>
+			<td> Were &euro;1000.00 <br> now &euro;50.00</td>
+			<td><img width="100" height="100" src="spaceBoot.jpg" alt="Space Boot"></td>
+		</tr>
+							
+	</table>
+	</td>
+	
+	<!--Other Content Area-->
+	<td width="200" height="400" background ="footprintAnimal.jpg" alt="Footprints">
+</tr>
+<tr>
+	<!--Footer Area-->
+	<td colspan="3" width ="950" height="100" align="center">
+	This page 'Funky Footware' was created as part of an 'Internet Programming' module CT870 </td>
+</tr>
+</table>
+</body>
+</html>

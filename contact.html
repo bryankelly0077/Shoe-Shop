@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" >
+	<title>Home</title>
+	
+	<script type="text/javascript">
+		function validate(){
+			if(myform.question.value.length<25) {
+				window.alert("Please enter a question with at least 25 characters ");
+			}
+			if(myform.name.value.length<10) {
+				window.alert("Please enter a name with at least 10 characters");
+			}
+			var e = myform.email.value;
+			if((e.length<10)||(e.indexOf("@")<0)||(e.indexOf(".")<0)) {
+				window.alert("Please enter at least 10 characters and include the symbols @ and . in email address");
+			}
+			else {
+				window.alert("Your question will be dealt with as soon as possible")
+				}
+		}
+			function startTime() {
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('clock').innerHTML =
+			h + ":" + m + ":" + s;
+			var t = setTimeout(startTime, 500);
+			}
+			function checkTime(i) {
+			if (i < 10) 
+				{i = "0" + i};  // add zero in front of numbers < 10
+				return i;
+			}
+	</script>
+</head>		
+<body  onload="startTime()" "carousel();">
+	<div class = "photoheader"></div>
+	<div class = "header">
+	
+	<h1 style="background-color:#999999; color:#EEEEEE; font-size:60px; padding: 30px; margin: 0px; text-align:center">Funky Footware
+	<div id="clock"></div>
+	</h1>
+	</div>	
+			<div class="banner">
+			<div id="bannerleft">
+				&nbsp
+			</div>
+			<div class="slider">
+				<img class="mySlides" src="ShoeBasket.jpeg" style="width:100%">
+					<img class="mySlides" src="OutDoorShoes.jpeg" style="width:100%">
+						<img class="mySlides" src="LeatherShoes.jpeg" style="width:100%">
+						<img class="mySlides" src="SummerShoes.jpeg" style="width:100%">
+			</div>
+			<div id= "bannerright">
+				&nbsp
+			</div>
+			<script type="text/javascript">
+				var myIndex = 0;
+				carousel();
+
+				function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+						}
+						myIndex++;
+						if (myIndex > x.length) {myIndex = 1}    
+					x[myIndex-1].style.display = "block";  
+					setTimeout(carousel, 2000); // Change image every 2 seconds
+					}
+			</script>
+			</div>
+
+	<div class= "content">
+	<!--Navigation Area-->
+		<div class="nav">
+			<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.php">Contact Information</a></li>
+			<li><a href="offers.html">Special Offers</a></li>
+			<li><a href="links.html">Useful Links</a></li>
+			</ul>	
+		</div>
+	<!--Main Content Area-->
+		<div class="main" >
+			<h1>Contact Information</h1>
+				<table id ="qform">
+					<form name=myform>
+					<tr>
+						<th colspan="2">Please submit your questions below</th>
+					</tr>
+					<tr>
+						<td>
+							Choose Category
+							<br>
+							<select name="categories" >
+								<option value="sales">sales</option>
+								<option value="returns">returns</option>
+								<option value="shipping">shipping</option>
+								<option value="payment">payment</option>
+								<option value="vouchers">vouchers</option>
+							</select>
+						</td>
+						<td>
+							Please enter your question:<br>
+							<textarea name="question" rows=3 cols=40 ></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Please enter your name:<br>
+							<input type="text" name="name" value="" size="20" >
+						</td>
+						<td>
+							Please enter your Email address:<br>
+							<input type="text" name="email" value="" size="20" ><br><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" name="button1" value="Submit" onclick="validate()";><br><br>
+						</td>
+					</tr>
+					</form>
+				</table>
+			
+			<div class=contact>
+				<dl>
+				<div class=info>
+					<dt><h3> Fulfilment Executive</h3> <h4>Micky Mack</h4> </dt>
+					<dd> <h5>Phone Number</h5>091123455</dd>
+					<dd><h5>Email</h5> <a href="mailto:m.mack@funkyfootware.ie">m.mack@funkyfootware.ie</a></dd>
+				</div>
+				<div class=info>
+					<dt><h3> Marketing Officer</h3> <h4>Johnny Stones</h4> </dt>
+					<dd> <h5>Phone Number</h5>091123456</dd>
+					<dd><h5>Email</h5> <a href="mailto:j.stones@funkyfootware.ie">j.stones@funkyfootware.ie</a></dd>
+				</div>
+				<div class=info>
+					<dt><h3> Secretary</h3> <h4>Molly Williams</h4> </dt>
+					<dd> <h5>Phone Number</h5>091123457</dd>
+					<dd><h5>Email</h5> <a href="mailto:m.williams@funkyfootware.ie">m.williams@funkyfootware.ie</a></dd>
+				</div>
+				</dl>
+			</div>
+		</div>
+	<!--Other Content Area-->
+		<div class="othercontent">
+		</div>
+	</div>
+	<!--Footer Area-->
+	<div class="footer" >
+		This page 'Funky Footware' was created as part of an 'Internet Programming' module CT870
+	</div>
+</body>
+</html>

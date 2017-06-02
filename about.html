@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css" >
+			<title>Home</title>
+			<script type="text/javascript">
+				function startTime() {
+				var today = new Date();
+				var h = today.getHours();
+				var m = today.getMinutes();
+				var s = today.getSeconds();
+				m = checkTime(m);
+				s = checkTime(s);
+				document.getElementById('clock').innerHTML =
+				h + ":" + m + ":" + s;
+				var t = setTimeout(startTime, 500);
+				}
+				function checkTime(i) {
+				if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+								return i;
+								}
+			</script>
+
+	</head>
+	<body  onload="startTime()" "carousel();">
+		<div class = "photoheader"></div>
+		<div class = "header">
+			
+
+			<h1 style="background-color:#999999; color:#EEEEEE; font-size:60px; padding: 30px; margin: 0px; text-align:center ">Funky Footware
+				<div id="clock">
+				</div>
+			</h1>
+		</div>	
+			<div class="banner">
+			<div id="bannerleft">
+				&nbsp
+			</div>
+			<div class="slider">
+				<img class="mySlides" src="ShoeBasket.jpeg" style="width:100%">
+					<img class="mySlides" src="OutDoorShoes.jpeg" style="width:100%">
+						<img class="mySlides" src="LeatherShoes.jpeg" style="width:100%">
+						<img class="mySlides" src="SummerShoes.jpeg" style="width:100%">
+			</div>
+			<div id= "bannerright">
+				&nbsp
+			</div>
+			<script type="text/javascript">
+				var myIndex = 0;
+				carousel();
+
+				function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+						}
+						myIndex++;
+						if (myIndex > x.length) {myIndex = 1}    
+					x[myIndex-1].style.display = "block";  
+					setTimeout(carousel, 2000); // Change image every 2 seconds
+					}
+			</script>
+			</div>
+
+	<div class= "content">
+	<!--Navigation Area-->
+		<div class="nav">
+			<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.php">Contact Information</a></li>
+			<li><a href="offers.html">Special Offers</a></li>
+			<li><a href="links.html">Useful Links</a></li>
+			</ul>	
+		</div>
+	<!--Main Content Area-->
+		<div class="main" >
+			<h1>About Funky Footware</h1>
+			<p>Funky Footware sells a wide range of footware to suit the needs of everybody.
+			We are over 10 years in business with a main distribution centre in Galway city.
+			</p>
+			<h3>'Comfort Should Not Comprimise Style' </h3>
+			<img id="aboutpic" src="runnerDisplay.jpg" alt="Space Boot">
+			<p>At Funky Footware we sell footware that not only looks good but feels good to wear. 
+			With a large selection in every range we have a comfortable style for everybody.
+			See our <a href="offers.html">Special Offers</a> page to keep up to date with our newest 
+			products and promotions.If you have an issues or questions please conatct us through 
+			our <a href="contact.php">Contact page.</a></p>
+		
+		</div>
+	
+	<!--Other Content Area-->
+		<div class="othercontent">
+		</div>
+	</div>
+	
+	<!--Footer Area-->
+	<div class="footer" >
+	This page 'Funky Footware' was created as part of an 'Internet Programming' module CT870
+	</div>
+</body>
+</html>

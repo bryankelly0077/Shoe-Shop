@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Internet Programming <br>16102534 </title>
+
+</head>
+
+<body>
+
+<h1><center>bk</center></h1><br>
+<ul type="_blank">
+<li><a href="assignment1/index.html">Assignment 1 </a> </li>
+<br>
+<br>
+<li> <a href="assignment2/index.html">Assignment 2 </a> </li>
+<br>
+<br>
+<li> <a href="assignment3/index.html">Assignment 3 </a> </li>
+<br>
+<br>
+<li> <a href="assignment4/index.html">Assignment 4 </a> </li>
+<br>
+<br>
+<li> <a href="assignment5/index.html">Assignment 5 </a> </li>
+<br>
+<br>
+<li> <a href="assignment6/index.html">Assignment 6 </a> </li>
+<br>
+<br>
+<li> <a href="assignment7/index.html">Assignment 7 </a> </li>
+<br>
+<br>
+<li> <a href="assignment8/index.html">Assignment 8 </a> </li>
+<br>
+<br>
+</ul>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+</head>
+<body>
+<table border="1" width="100%" >
+<tr><h1 size="100" align="center"><a href="index.html" >Funky Footware</a></h1>
+	<td colspan="3" width="950" height="200" background ="allTypesFootware.jpg" alt="Funky Footware">
+	
+	
+	</td>
+</tr>
+<!--Navigation Area-->
+<tr>
+	<td width="200" height="400"> Navigation Area
+	<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About Us</a></li>
+	<li><a href="contact.html">Contact Information</a></li>
+	<li><a href="offers.html">Special Offers</a></li>
+	<li><a href="links.html">Useful Links</a></li>
+	</ul>
+	</td>
+	<!--Main Content Area-->
+	<td width="550" height="400"><h1><center>Latest news and updates</center></h1>
+	<h2>New Nike Assassins now in stock</h2>
+	<p>Shoes are amazing</p>
+	<h2>Faster Delivery Service Now Available</h2>
+	<p>Shoes are amazing</p>
+	</td>
+	
+	<!--Other Content Area-->
+	<td width="200" height="400">Other Content</td>
+</tr>
+<tr>
+	<td colspan="3" width ="950" height="100" align="center">
+	This page 'Funky Footware' was created as part of an 'Internet Programming' module CT870 </td>
+</tr>
+</table>
+</body>
+</html>

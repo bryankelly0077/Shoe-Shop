@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+</head>
+<body>
+<table width="100%" >
+<tr><h1 size="100" align="center"><a href="index.html" >Funky Footware</a></h1>
+	<td colspan="3" width="950" height="200" background ="allTypesFootware.jpg" alt="Funky Footware">
+	</td>
+</tr>
+<!--Navigation Area-->
+<tr>
+	<td width="200" height="400" valign="top"> Navigation Area
+	<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About Us</a></li>
+	<li><a href="contact.html">Contact Information</a></li>
+	<li><a href="offers.html">Special Offers</a></li>
+	<li><a href="links.html">Useful Links</a></li>
+	</ul>
+	</td>
+	<!--Main Content Area-->
+	<td width="550" height="400"><h1><center>Contact Information</center></h1>
+		<dl>
+			<dt><h3> Fulfilment Executive</h3> <h4>Micky Mack</h4> </dt>
+			<dd> <h5>Phone Number</h5>091123455</dd>
+			<dd><h5>Email</h5> <a href="mailto:m.mack@funkyfootware.ie">m.mack@funkyfootware.ie</a></dd>
+			
+			<dt><h3> Marketing Officer</h3> <h4>Johnny Stones</h4> </dt>
+			<dd> <h5>Phone Number</h5>091123456</dd>
+			<dd><h5>Email</h5> <a href="mailto:j.stones@funkyfootware.ie">j.stones@funkyfootware.ie</a></dd>
+			
+			<dt><h3> Secretary</h3> <h4>Molly Williams</h4> </dt>
+			<dd> <h5>Phone Number</h5>091123457</dd>
+			<dd><h5>Email</h5> <a href="mailto:m.williams@funkyfootware.ie">m.williams@funkyfootware.ie</a></dd>
+		</dl>
+	</td>
+	
+	<!--Other Content Area-->
+	<td width="200" height="400" background ="footprintAnimal.jpg" alt="Footprints">
+	<!--<img width="200" height="400" src="footprintAnimal.jpg" alt="Space Boot"></td>-->
+</tr>
+<tr>
+	<!--Footer Area-->
+	<td colspan="3" width ="950" height="100" align="center">
+	This page 'Funky Footware' was created as part of an 'Internet Programming' module CT870 </td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css" >
+			<title>Home</title>
+			<script type="text/javascript">
+				function startTime() {
+				var today = new Date();
+				var h = today.getHours();
+				var m = today.getMinutes();
+				var s = today.getSeconds();
+				m = checkTime(m);
+				s = checkTime(s);
+				document.getElementById('clock').innerHTML =
+				h + ":" + m + ":" + s;
+				var t = setTimeout(startTime, 500);
+				}
+				function checkTime(i) {
+				if (i < 10) 
+					{i = "0" + i};  // add zero in front of numbers < 10
+					return i;
+				}
+			</script>
+
+	</head>
+	<body  onload="startTime()" "carousel();">
+		<div class = "photoheader"></div>
+		<div class = "header">
+			<h1 style="background-color:#999999; color:#EEEEEE; font-size:60px; padding: 30px; margin: 0px; text-align:center ">Funky Footware
+				<div id="clock">
+				</div>
+			</h1>
+		</div>	
+			<div class="banner">
+			<div id="bannerleft">
+				&nbsp
+			</div>
+			<div class="slider">
+				<img class="mySlides" src="ShoeBasket.jpeg" style="width:100%">
+					<img class="mySlides" src="OutDoorShoes.jpeg" style="width:100%">
+						<img class="mySlides" src="LeatherShoes.jpeg" style="width:100%">
+						<img class="mySlides" src="SummerShoes.jpeg" style="width:100%">
+			</div>
+			<div id= "bannerright">
+				&nbsp
+			</div>
+			<script type="text/javascript">
+				var myIndex = 0;
+				carousel();
+
+				function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+						}
+						myIndex++;
+						if (myIndex > x.length) {myIndex = 1}    
+					x[myIndex-1].style.display = "block";  
+					setTimeout(carousel, 2000); // Change image every 2 seconds
+					}
+			</script>
+			</div>
+
+	<div class= "content">
+	<!--Navigation Area-->
+		<div class="nav"> 
+			<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.php">Contact Information</a></li>
+			<li><a href="offers.html">Special Offers</a></li>
+			<li><a href="links.html">Useful Links</a></li>
+			</ul>	
+		</div>
+	<!--Main Content Area-->
+		<div class="main" >
+			<h1>Useful Links</h1>
+			<ul>
+			<li>Understand how to keep your feet healthy with these helful tips from the HSE.<br>
+			<a href="http://www.hse.ie/eng/services/list/4/olderpeople/tipsforhealthyliving/footcare.html" 
+			target="_blank">How to take care of your feet</a></li>
+			<br><br>
+			<li>Information for upcoming marathon events thoughout Ireland in the coming year.<br>
+			<a href="http://marathons.ahotu.com/calendar/marathon/ireland"
+			target="_blank">Marathon events Ireland</a></li>
+			<br><br>
+			<li>Get the perfect shoes for ladies day at The Galway Races. Check out the fashion from this year.<br>
+			<a href="http://www.galwayraces.com/fixtures-ticket/ladies-day/"
+			target="_blank">Ladies Day Fashion</a></li>
+			<br><br>
+			<li>Stay safe while running or walking on Irish roads.<br>
+			<a href="http://www.rsa.ie/en/RSA/Pedestrians-and-Cyclists/Pedestrian-safety/"
+			target="_blank">Pedestrian Road Safety</a></li>
+			<br><br>
+			<li>Check out the advice from the HSA on the importance of good footware to remove the risk of slips and falls.<br>
+			<a href="http://www.hsa.ie/eng/Topics/Slips_Trips_Falls/Shoes,_Footwear/"
+			target="_blank">Importance of good footware</a></li>
+		</div>
+	
+	<!--Other Content Area-->
+		<div class="othercontent">
+		</div>
+	</div>
+	
+	<!--Footer Area-->
+	<div class="footer" >
+		This page 'Funky Footware' was created as part of an 'Internet Programming' module CT870
+	</div>
+</body>
+</html>

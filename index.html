@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css" >
+			<title>Home</title>
+			<script type="text/javascript">
+				function startTime() {
+				var today = new Date();
+				var h = today.getHours();
+				var m = today.getMinutes();
+				var s = today.getSeconds();
+				m = checkTime(m);
+				s = checkTime(s);
+				document.getElementById('clock').innerHTML =
+				h + ":" + m + ":" + s;
+				var t = setTimeout(startTime, 500);
+				}
+				function checkTime(i) {
+				if (i < 10) 
+					{i = "0" + i};  // add zero in front of numbers < 10
+					return i;
+				}
+			</script>
+
+	</head>
+	<body  onload="startTime()" "carousel();">
+		<div class = "photoheader"></div>
+		<div class = "header">
+			<h1 style="background-color:#999999; color:#EEEEEE; font-size:60px; padding: 30px; margin: 0px; text-align:center ">Funky Footware
+				<div id="clock">
+				</div>
+			</h1>
+		</div>	
+			<div class="banner">
+			<div id="bannerleft">
+				&nbsp
+			</div>
+			<div class="slider">
+				<img class="mySlides" src="ShoeBasket.jpeg" style="width:100%">
+					<img class="mySlides" src="OutDoorShoes.jpeg" style="width:100%">
+						<img class="mySlides" src="LeatherShoes.jpeg" style="width:100%">
+						<img class="mySlides" src="SummerShoes.jpeg" style="width:100%">
+			</div>
+			<div id= "bannerright">
+				&nbsp
+			</div>
+			<script type="text/javascript">
+				var myIndex = 0;
+				carousel();
+
+				function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+						}
+						myIndex++;
+						if (myIndex > x.length) {myIndex = 1}    
+					x[myIndex-1].style.display = "block";  
+					setTimeout(carousel, 2000); // Change image every 2 seconds
+					}
+			</script>
+			</div>
+
+			<div class= "content">
+				<!--Navigation Area-->
+				<div class="nav">
+
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="contact.php">Contact Information</a></li>
+						<li><a href="offers.html">Special Offers</a></li>
+						<li><a href="links.html">Useful Links</a></li>
+					</ul>
+				</div>
+				<!--Main Content Area-->
+				<div class="main" >
+					<h1>Latest news and updates</h1>
+					<img src="Homers Assassins.jpg" >
+						<h2>'ASSASSINS' trainers now in stock</h2>
+						<p>As worn by Homer Simpson! With velcro straps,water pump in the tongues, built in pedometer and little vanity licence plates, you'll 
+							be the envy of every guy in the street
+						</p>	
+						<br><br>
+								<h2>Faster Delivery Service Now Available</h2>
+								<p>At Funky Footware we provide an excellent delivery service. We have recently 
+									increased our fleet of couriers to guarantee next day delivery on all our in-stock products 
+									sold in Ireland.
+								</p>
+								<br><br>
+										<img src="spaceBoot.jpg" alt="Space Boot">
+											<h2>We are now selling Space Boots</h2>
+											<p>Ever dreamed of going to the moon?....well now you can take that first 'small step' in style!
+												With navigation lights in the sole, you wont trip-up in these babies!</p>
+										</div>
+										<!--Other Content Area-->
+										<div class="othercontent">
+										</div>
+									</div>
+									<!--Footer Area-->
+									<div class="footer" >
+										This page 'Funky Footware' was created as part of an 'Internet Programming' module CT870
+									</div>
+								</body>
+							</html>
